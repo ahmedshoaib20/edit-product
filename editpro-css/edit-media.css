@@ -1,0 +1,64 @@
+/* Laptop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .main {
+        padding: 24px 32px;
+        gap: 22px;
+    }
+
+    .form-card {
+        padding: 26px 28px;
+    }
+
+    .form-row {
+        gap: 20px;
+    }
+
+    .search {
+        width: 220px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 701px) and (max-width: 1024px) {
+    .main {
+        padding: 20px;
+        gap: 18px;
+    }
+
+    .form-card {
+        padding: 22px;
+    }
+
+    .form-row {
+        gap: 16px;
+    }
+
+    .search {
+        width: 190px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .main {
+        padding: 14px 12px;
+        gap: 16px;
+    }
+
+    .form-card {
+        padding: 18px 14px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .form-actions {
+        gap: 10px;
+    }
+
+    .search {
+        width: 100%;
+    }
+}

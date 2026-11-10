@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product | Smart Warehouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./editpro-css/editpr.css" />
+    <link rel="stylesheet" href="./editpro-css/edit-media.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="logo">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="12.6299"
+              y="14.4102"
+              width="0.485714"
+              height="1.45714"
+              fill="#001322"
+            />
+            <rect
+              x="10.5254"
+              y="14.4102"
+              width="4.69524"
+              height="4.37143"
+              rx="0.32381"
+              fill="url(#paint0_linear_1216_4464)"
+            />
+            <rect
+              x="7.28613"
+              y="14.4102"
+              width="0.485714"
+              height="1.45714"
+              fill="#001322"
+            />
+            <rect
+              x="5.18262"
+              y="14.4102"
+              width="4.69524"
+              height="4.37143"
+              rx="0.32381"
+              fill="url(#paint1_linear_1216_4464)"
+            />
+            <rect
+              x="10.0391"
+              y="9.55469"
+              width="0.485714"
+              height="1.45714"
+              fill="#001322"
+            />
+            <rect
+              x="7.77051"
+              y="9.55469"
+              width="4.85714"
+              height="4.37143"
+              rx="0.32381"
+              fill="url(#paint2_linear_1216_4464)"
+            />
+            <path
+              d="M0.647619 4.61287L9.55238 0.164745C9.98413 -0.0549151 10.4159 -0.0549151 10.8476 0.164745L19.7524 4.61287C20.1841 4.83253 20.4 5.21693 20.4 5.76608V18.122C20.4 18.5613 20.1841 18.781 19.7524 18.781H18.619V6.09557L10.2 1.8122L1.78095 6.09557V18.781H0.647619C0.215873 18.781 0 18.5613 0 18.122V5.76608C0 5.21693 0.215873 4.83253 0.647619 4.61287Z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              fill="url(#paint3_linear_1216_4464)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_1216_4464"
+                x1="10.5254"
+                y1="14.4102"
+                x2="15.2206"
+                y2="14.4102"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#A0B4D6" />
+                <stop offset="0.6" stop-color="#4B6DC5" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_1216_4464"
+                x1="5.18262"
+                y1="14.4102"
+                x2="9.87786"
+                y2="14.4102"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#A0B4D6" />
+                <stop offset="0.6" stop-color="#4B6DC5" />
+              </linearGradient>
+              <linearGradient
+                id="paint2_linear_1216_4464"
+                x1="7.77051"
+                y1="9.55469"
+                x2="12.6277"
+                y2="9.55469"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#A0B4D6" />
+                <stop offset="0.6" stop-color="#4B6DC5" />
+              </linearGradient>
+              <linearGradient
+                id="paint3_linear_1216_4464"
+                x1="0"
+                y1="0"
+                x2="20.4"
+                y2="0"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#A0B4D6" />
+                <stop offset="0.6" stop-color="#4B6DC5" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <p>Smart <span>Warehouse</span></p>
+        </div>
+
+        <nav>
+          <p class="section">Operations</p>
+          <a class="item" href="#">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.16667 1.625H4.875C5.17415 1.625 5.41667 1.86751 5.41667 2.16667V5.95833C5.41667 6.25749 5.17415 6.5 4.875 6.5H2.16667C1.86751 6.5 1.625 6.25749 1.625 5.95833V2.16667C1.625 1.86751 1.86751 1.625 2.16667 1.625ZM8.125 1.625H10.8333C11.1325 1.625 11.375 1.86751 11.375 2.16667V3.79167C11.375 4.09082 11.1325 4.33333 10.8333 4.33333H8.125C7.82585 4.33333 7.58333 4.09082 7.58333 3.79167V2.16667C7.58333 1.86751 7.82585 1.625 8.125 1.625ZM8.125 6.5H10.8333C11.1325 6.5 11.375 6.74251 11.375 7.04167V10.8333C11.375 11.1325 11.1325 11.375 10.8333 11.375H8.125C7.82585 11.375 7.58333 11.1325 7.58333 10.8333V7.04167C7.58333 6.74251 7.82585 6.5 8.125 6.5ZM2.16667 8.66667H4.875C5.17415 8.66667 5.41667 8.90918 5.41667 9.20833V10.8333C5.41667 11.1325 5.17415 11.375 4.875 11.375H2.16667C1.86751 11.375 1.625 11.1325 1.625 10.8333V9.20833C1.625 8.90918 1.86751 8.66667 2.16667 8.66667Z"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke="#CDD4E1"
+              />
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a class="item" href="#">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.56116 11.3746C5.65625 11.5393 5.793 11.676 5.95769 11.7711C6.12237 11.8662 6.30918 11.9162 6.49934 11.9162C6.6895 11.9162 6.87631 11.8662 7.041 11.7711C7.20568 11.676 7.34244 11.5393 7.43753 11.3746M1.76652 8.30089C1.69576 8.37845 1.64906 8.47491 1.63211 8.57853C1.61516 8.68215 1.62868 8.78846 1.67103 8.88453C1.71338 8.9806 1.78274 9.0623 1.87066 9.11967C1.95859 9.17705 2.06129 9.20764 2.16628 9.20772H10.8331C10.9381 9.20775 11.0408 9.17729 11.1288 9.12002C11.2168 9.06275 11.2862 8.98114 11.3287 8.88513C11.3712 8.78912 11.3848 8.68284 11.368 8.57922C11.3512 8.47559 11.3046 8.37908 11.234 8.30143C10.5135 7.55874 9.74977 6.76947 9.74977 4.33231C9.74977 3.47028 9.40736 2.64356 8.79785 2.03401C8.18834 1.42447 7.36168 1.08203 6.4997 1.08203C5.63773 1.08203 4.81107 1.42447 4.20156 2.03401C3.59205 2.64356 3.24964 3.47028 3.24964 4.33231C3.24964 6.76947 2.48533 7.55874 1.76652 8.30089Z"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke="#CDD4E1"
+              />
+            </svg>
+            <span>Alerts</span>
+            <em class="count">5</em>
+          </a>
+          <a class="item" href="#">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.78739 3.79142L6.49989 6.49991M6.49989 6.49991L11.2124 3.79142M6.49989 6.49991L6.5 11.9157M6.5 11.9157V11.9169M6.5 11.9157C6.30984 11.9157 6.12302 11.8657 5.95833 11.7706L2.16667 9.60378C2.00214 9.50879 1.86549 9.3722 1.77042 9.20771C1.67534 9.04323 1.62519 8.85663 1.625 8.66664V4.33306C1.62519 4.14307 1.67534 3.95648 1.77042 3.79199C1.86549 3.62751 2.00214 3.49092 2.16667 3.39592L5.95833 1.22913C6.12302 1.13404 6.30984 1.08398 6.5 1.08398C6.69017 1.08398 6.87698 1.13404 7.04167 1.22913L10.8333 3.39592C10.9979 3.49092 11.1345 3.62751 11.2296 3.79199C11.3247 3.95648 11.3748 4.14307 11.375 4.33306V8.66664C11.3748 8.85663 11.3247 9.04323 11.2296 9.20771C11.1345 9.3722 10.9979 9.50879 10.8333 9.60378L7.04167 11.7706C6.87698 11.8657 6.69017 11.9157 6.5 11.9157Z"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke="#CDD4E1"
+              />
+            </svg>
+            <span>Inventory</span>
+          </a>
+          <a class="item active" href="#">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.625 2.16699H11.375V3.79199H1.625V2.16699ZM1.625 5.95833H11.375V7.58333H1.625V5.95833ZM1.625 9.75H11.375V11.375H1.625V9.75Z"
+                fill="white"
+              />
+            </svg>
+            <span>Products</span>
+          </a>
+
+          <p class="section planning">Planning</p>
+          <a class="item" href="#">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.9172 7.04245V3.79297H8.66695M11.9172 3.79297L7.31267 8.3964L4.60412 5.6885L1.08301 9.20877"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke="#CDD4E1"
+              />
+            </svg>
+            <span>AI forecast</span>
+          </a>
+          <a class="item" href="#">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.66634 2.16545H9.74957C10.0369 2.16545 10.3124 2.2796 10.5155 2.48278C10.7187 2.68596 10.8328 2.96153 10.8328 3.24887V10.8328C10.8328 11.1202 10.7187 11.3957 10.5155 11.5989C10.3124 11.8021 10.0369 11.9162 9.74957 11.9162H3.25022C2.96293 11.9162 2.68741 11.8021 2.48426 11.5989C2.28112 11.3957 2.16699 11.1202 2.16699 10.8328V3.24887C2.16699 2.96153 2.28112 2.68596 2.48426 2.48278C2.68741 2.2796 2.96293 2.16545 3.25022 2.16545H4.33344M8.66634 2.16545V1.62374C8.66634 1.32456 8.42385 1.08203 8.12473 1.08203H4.87505C4.57593 1.08203 4.33344 1.32456 4.33344 1.62374V2.16545M8.66634 2.16545V2.70716C8.66634 3.00634 8.42385 3.24887 8.12473 3.24887H4.87505C4.57593 3.24887 4.33344 3.00634 4.33344 2.70716V2.16545M6.49989 5.95742H8.66634M6.49989 8.66597H8.66634M4.33344 5.95742H4.33886M4.33344 8.66597H4.33886"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke="#CDD4E1"
+              />
+            </svg>
+            <span>Purchase orders</span>
+            <em class="count">6</em>
+          </a>
+          <a class="item" href="#">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.58353 9.75054V4.33442M7.58353 9.75054H8.12524M7.58353 9.75054H4.87498M7.58353 4.33442V3.25119C7.58353 2.9639 7.46938 2.68838 7.2662 2.48524C7.06302 2.28209 6.78745 2.16797 6.50011 2.16797H2.16643C1.87909 2.16797 1.60351 2.28209 1.40033 2.48524C1.19715 2.68838 1.08301 2.9639 1.08301 3.25119V9.20893C1.08301 9.35258 1.14008 9.49034 1.24167 9.59191C1.34326 9.69348 1.48105 9.75054 1.62472 9.75054H2.70814M7.58353 4.33442H9.49035C9.57154 4.33453 9.65167 4.3529 9.7248 4.38815C9.79794 4.4234 9.86222 4.47463 9.91288 4.53807L11.798 6.89408C11.875 6.98995 11.917 7.10913 11.9172 7.23205V9.20893C11.9172 9.35258 11.8601 9.49034 11.7585 9.59191C11.657 9.69348 11.5192 9.75054 11.3755 9.75054H10.2921M2.70814 9.75054C2.70814 10.3488 3.1932 10.8338 3.79156 10.8338C4.38991 10.8338 4.87498 10.3488 4.87498 9.75054M2.70814 9.75054C2.70814 9.1523 3.1932 8.66732 3.79156 8.66732C4.38991 8.66732 4.87498 9.1523 4.87498 9.75054M8.12524 9.75054C8.12524 10.3488 8.6103 10.8338 9.20866 10.8338C9.80701 10.8338 10.2921 10.3488 10.2921 9.75054M8.12524 9.75054C8.12524 9.1523 8.6103 8.66732 9.20866 8.66732C9.80701 8.66732 10.2921 9.1523 10.2921 9.75054"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke="#CDD4E1"
+              />
+            </svg>
+            <span>Suppliers</span>
+          </a>
+          <a class="item" href="#">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.70801 11.375V8.125M6.50011 11.375V1.625M10.2922 11.375V4.875"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke="#CDD4E1"
+              />
+            </svg>
+            <span>Reports</span>
+          </a>
+        </nav>
+
+        <div class="profile-container">
+          <div id="usersPopup" class="active-users-popup">
+            <div class="popup-header">
+              <div>
+                <h3 class="popup-title">Active users</h3>
+                <p class="popup-subtitle">Signed in to the website</p>
+              </div>
+              <span class="online-pill">5 online</span>
+            </div>
+
+            <div class="popup-list">
+              <div
+                class="popup-user-item"
+                data-name="Ahmed Hassan"
+                data-role="Employee"
+                data-initials="AH"
+              >
+                <div class="user-avatar-wrap">
+                  <div class="u-avatar avatar-ah">AH</div>
+                  <span class="status-dot green"></span>
+                </div>
+                <div class="u-info">
+                  <strong>Ahmed Hassan</strong>
+                  <span>ahmed@smartwh.com</span>
+                </div>
+                <span class="role-pill blue">Employee</span>
+              </div>
+
+              <div
+                class="popup-user-item"
+                data-name="Sara Mostafa"
+                data-role="Employee"
+                data-initials="SM"
+              >
+                <div class="user-avatar-wrap">
+                  <div class="u-avatar avatar-sm">SM</div>
+                  <span class="status-dot green"></span>
+                </div>
+                <div class="u-info">
+                  <strong>Sara Mostafa</strong>
+                  <span>sara@smartwh.com</span>
+                </div>
+                <span class="role-pill blue">Employee</span>
+              </div>
+
+              <div
+                class="popup-user-item"
+                data-name="Karim Adel"
+                data-role="Merchant"
+                data-initials="KA"
+              >
+                <div class="user-avatar-wrap">
+                  <div class="u-avatar avatar-ka">KA</div>
+                  <span class="status-dot green"></span>
+                </div>
+                <div class="u-info">
+                  <strong>Karim Adel</strong>
+                  <span>karim@supplier.com</span>
+                </div>
+                <span class="role-pill amber">Merchant</span>
+              </div>
+
+              <div
+                class="popup-user-item"
+                data-name="Nour Youssef"
+                data-role="Employee"
+                data-initials="NY"
+              >
+                <div class="user-avatar-wrap">
+                  <div class="u-avatar avatar-ny">NY</div>
+                  <span class="status-dot green"></span>
+                </div>
+                <div class="u-info">
+                  <strong>Nour Youssef</strong>
+                  <span>nour@smartwh.com</span>
+                </div>
+                <span class="role-pill blue">Employee</span>
+              </div>
+
+              <div
+                class="popup-user-item"
+                data-name="Mona Tarek"
+                data-role="Merchant"
+                data-initials="MT"
+              >
+                <div class="user-avatar-wrap">
+                  <div class="u-avatar avatar-mt">MT</div>
+                  <span class="status-dot gray"></span>
+                </div>
+                <div class="u-info">
+                  <strong>Mona Tarek</strong>
+                  <span>Active 8 min ago</span>
+                </div>
+                <span class="role-pill amber">Merchant</span>
+              </div>
+            </div>
+
+            <div class="popup-footer">
+              <div class="manager-avatar">WM</div>
+              <div class="u-info">
+                <strong id="currentManagerName">Warehouse Manager</strong>
+                <span id="currentManagerRole" class="admin-subtext">Admin</span>
+              </div>
+              <button class="popup-action-btn">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#24355F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                  <polyline points="10 17 15 12 10 7"></polyline>
+                  <line x1="15" y1="12" x2="3" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="profile">
+            <div class="avatar">WM</div>
+            <div class="who">
+              <strong id="sidebarManagerName">Warehouse Manager</strong>
+              <span id="sidebarManagerRole">Manager</span>
+            </div>
+            <div class="team">
+              <svg
+                width="33"
+                height="33"
+                viewBox="0 0 33 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect y="5" width="28" height="28" rx="8" fill="#20304A" />
+                <path
+                  d="M17 25.7502V24.2502C17 23.4545 16.6839 22.6914 16.1213 22.1288C15.5587 21.5662 14.7956 21.2502 14 21.2502H9.5C8.70435 21.2502 7.94129 21.5662 7.37868 22.1288C6.81607 22.6914 6.5 23.4545 6.5 24.2502V25.7502M21.5 25.7502V24.2502C21.4995 23.5855 21.2783 22.9397 20.871 22.4144C20.4638 21.889 19.8936 21.5138 19.25 21.3477M17 12.3477C17.6453 12.5129 18.2173 12.8882 18.6257 13.4144C19.0342 13.9406 19.2559 14.5878 19.2559 15.2539C19.2559 15.92 19.0342 16.5672 18.6257 17.0934C18.2173 17.6196 17.6453 17.9949 17 18.1602"
+                  stroke-width="1.275"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="white"
+                />
+                <path
+                  d="M14.75 15.25C14.75 16.9069 13.4069 18.25 11.75 18.25C10.0931 18.25 8.75 16.9069 8.75 15.25C8.75 13.5931 10.0931 12.25 11.75 12.25C13.4069 12.25 14.75 13.5931 14.75 15.25Z"
+                  stroke-width="1.275"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="white"
+                />
+                <circle cx="26" cy="7" r="7" fill="#45B189" />
+                <text id="teamCount" x="26" y="10.5"
+      text-anchor="middle" font-size="9"
+      font-weight="700" fill="white">5</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="top">
+          <div class="breadcrumb-heading">
+            <a href="#" class="back-products">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#24355F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              <span>Products</span>
+            </a>
+            <h1>Edit product</h1>
+            <p>product 1 · SKU-2210</p>
+          </div>
+
+          <div class="tools">
+            <div class="search">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.3751 11.3751L9.02425 9.02425M10.2917 5.95833C10.2917 8.35157 8.35157 10.2917 5.95833 10.2917C3.5651 10.2917 1.625 8.35157 1.625 5.95833C1.625 3.5651 3.5651 1.625 5.95833 1.625C8.35157 1.625 10.2917 3.5651 10.2917 5.95833Z"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke="#7D8491"
+                />
+              </svg>
+              <input type="text" placeholder="Search products, SKUs..." />
+            </div>
+
+            <div class="lang">
+              <button class="lang-btn active">English</button>
+              <button class="lang-btn">العربية</button>
+            </div>
+
+            <button class="bell">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#15283D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <section class="form-card-section">
+          <div class="form-card">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Name</label>
+                <input
+                  type="text"
+                  placeholder="product 1 (copy)"
+                  data-placeholder-en="product 1 (copy)"
+                  data-placeholder-ar="مثال: منتج 1 (نسخة)"
+                />
+              </div>
+              <div class="form-group">
+                <label>Category</label>
+                <input
+                  type="text"
+                  placeholder="product"
+                  data-placeholder-en="product"
+                  data-placeholder-ar="مثال: إلكترونيات أو أثاث"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Purchase price (EGP)</label>
+                <input
+                  type="text"
+                  placeholder="10.00"
+                  data-placeholder-en="10.00"
+                  data-placeholder-ar="10.00"
+                />
+              </div>
+              <div class="form-group">
+                <label>Sell price (EGP)</label>
+                <input
+                  type="text"
+                  placeholder="12.50"
+                  data-placeholder-en="12.50"
+                  data-placeholder-ar="12.50"
+                />
+              </div>
+            </div>
+
+            <div class="form-row single-col">
+              <div class="form-group">
+                <label>SKU</label>
+                <input
+                  type="text"
+                  placeholder="SKU-2210"
+                  data-placeholder-en="SKU-2210"
+                  data-placeholder-ar="SKU-2210"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="form-actions">
+          <button class="btn-cancel">Cancel</button>
+          <button class="btn-save">Save changes</button>
+        </div>
+
+        <footer class="page-footer">
+          <p>© 2027 Smart Warehouse. All rights reserved.</p>
+        </footer>
+      </main>
+    </div>
+    <script src="editpro-js/editpr.js"></script>
+  </body>
+</html>
